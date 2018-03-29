@@ -1,0 +1,1 @@
+A collection of javascript helper functions
