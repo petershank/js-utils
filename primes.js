@@ -1,4 +1,4 @@
-// a collection of javascript helper functions
+// an awesome collection of javascript helper functions
   function getPrimes(n) {
     var max = n;
     var integers = [];
