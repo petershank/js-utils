@@ -1,0 +1,23 @@
+'use strict';
+
+var fs = require('fs');
+
+fs.readFile('yourfile.txt', function(err, data) {
+  if (err) {
+    throw err;
+  }
+
+  var docs = (data
+    .toString()
+    .split('\n')
+    .filter(function(line) {
+      return line.trim() !== '';
+    })
+    .map(function(line) {
+      // Do something else here depending on the exact format of your data
+      return 'A non-empty line: ' + line;
+    })
+  );
+
+  console.log(docs);
+});
