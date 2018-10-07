@@ -2,7 +2,7 @@ A collection of javascript helper functions
 
 
 Here's a change
-Peter Shank <peter@shank.com>
+Peter Shank
 
 this is fun 
 
