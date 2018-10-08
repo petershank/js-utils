@@ -1,10 +1,7 @@
 var assert = require('assert')
 var check = require('check-types')
 var primes = require('../primes.js')
-
-// console.clear()
-// console.log('foo bar')
-// console.log(primes.getPrimes(10))
+var validate = require('../validate.js')
 
 describe('getPrimes', function () {
   it('generates prime numbers correctly', function (done) {
@@ -23,6 +20,14 @@ describe('getPrimes', function () {
     done()
   })
 })
+
+describe('trueTypeOf', function () {
+  it('returns accurate and intuitive type strings', function (done) {
+    assert.strictEqual(validate.trueTypeOf(2), 'number')
+    done()
+  })
+})
+
 
 // describe('Tests for the "check-types" validation library', function () {
 //   it('recognizes a string', function (done) {
