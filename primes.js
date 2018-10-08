@@ -94,3 +94,5 @@ module.exports.getPrimes = getPrimes
 module.exports.getMirror = getMirror
 module.exports.getPiFunction = getPiFunction
 module.exports.isPrime = isPrime
+
+// console.log(getPrimes(2))
