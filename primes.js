@@ -1,4 +1,4 @@
-// an awesome collection of javascript helper functions
+// a collection of javascript helper functions
 var check = require('check-types')
 
 function getPrimes (n) {
