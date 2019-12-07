@@ -1,0 +1,15 @@
+{
+  "name": "isleapyear",
+  "version": "1.0.0",
+  "description": "a helper function to detect leap years",
+  "main": "isLeapYear.js",
+  "dependencies": {
+    "jest": "^24.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "",
+  "license": "ISC"
+}
