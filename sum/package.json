@@ -1,0 +1,14 @@
+{
+  "name": "sum",
+  "version": "1.0.0",
+  "description": "skeleton node module",
+  "main": "sum.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Peter Shank",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^25.4.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "binarySearch",
+  "version": "1.0.0",
+  "description": "binary search in javascript",
+  "main": "binary-search.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Peter Shank",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^7.1.1"
+  }
+}
