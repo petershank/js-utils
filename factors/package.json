@@ -1,0 +1,16 @@
+{
+  "name": "factors",
+  "version": "1.0.0",
+  "description": "a js helper function that takes an integer > 1 and refurns an array with its prime factors",
+  "main": "factors.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "peter@shank.com",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.3"
+  },
+  "dependencies": {}
+}
