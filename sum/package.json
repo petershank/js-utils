@@ -1,14 +1,11 @@
 {
   "name": "sum",
   "version": "1.0.0",
-  "description": "skeleton node module",
+  "description": "a trivial function to demonstrate commonJS require",
   "main": "sum.js",
   "scripts": {
-    "test": "jest"
+    "test": "node test.js ./*-test.js"
   },
   "author": "Peter Shank",
-  "license": "MIT",
-  "dependencies": {
-    "jest": "^25.4.0"
-  }
+  "license": "MIT"
 }
