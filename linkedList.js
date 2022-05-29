@@ -20,12 +20,13 @@ class LinkedList {
   append(node) {
     if (this.head === null) {
       this.head = node;
+    } else {
+      let currentNode = this.head;
+      while (currentNode.next !== null) {
+        currentNode = currentNode.next;
+      }
+      currentNode.next = node;
     }
-    // this.head = node;
-    // while (currentNode.next !== null) {
-    //   currentNode = currentNode.next;
-    // }
-    // currentNode.next = node;
   }
 
   print() {
@@ -36,13 +37,13 @@ class LinkedList {
     }
   }
 }
-const george = new Node("George");
-// console.log(george);
-
+const george = new Node("George Washington");
+const johnAdams = new Node("John Adams");
+const thomas = new Node("Thomas Jefferson");
 const myList = new LinkedList();
-console.log(myList);
 myList.append(george);
-console.log(myList);
+myList.append(johnAdams);
+myList.append(thomas);
 // myList.append(george);
 // console.log(myList);
 
@@ -53,5 +54,5 @@ console.log(myList);
 // console.log(new LinkedList(new Node("hello")));
 // console.log(myNode);
 // console.log(myList.append());
-// myList.print();
+myList.print();
 // console.log(typeof myList);
