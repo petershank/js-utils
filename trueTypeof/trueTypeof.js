@@ -1,7 +1,7 @@
 const trueTypeOf = function (obj) {
-    'use strict'
+  "use strict";
 
-	return Object.prototype.toString.call(obj).slice(8, -1).toLowerCase();
+  return Object.prototype.toString.call(obj).slice(8, -1);
 };
 
-module.exports.trueTypeOf = trueTypeOf
+module.exports.trueTypeOf = trueTypeOf;
