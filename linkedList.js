@@ -18,10 +18,10 @@ class LinkedList {
   }
 
   append(node) {
-    // if (this.head === null) {
-    //   this.head = node;
-    // }
-    this.head = node;
+    if (this.head === null) {
+      this.head = node;
+    }
+    // this.head = node;
     // while (currentNode.next !== null) {
     //   currentNode = currentNode.next;
     // }
@@ -37,7 +37,7 @@ class LinkedList {
   }
 }
 const george = new Node("George");
-console.log(george);
+// console.log(george);
 
 const myList = new LinkedList();
 console.log(myList);
