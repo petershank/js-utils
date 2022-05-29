@@ -1,5 +1,5 @@
 var assert = require("assert");
-var primes = require("../primes.js");
+var primes = require("../primes/primes.js");
 var validate = require("../validate.js");
 
 describe("getPrimes", function () {

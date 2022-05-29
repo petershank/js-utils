@@ -86,6 +86,6 @@ module.exports.getMirror = getMirror;
 module.exports.getPiFunction = getPiFunction;
 module.exports.isPrime = isPrime;
 
-//console.log(primes(11));
-let count = 137;
-console.log(parseInt(count.toString().split("").reverse().join("")) + 1);
+// let count = 137;
+// console.log(parseInt(count.toString().split("").reverse().join("")) + 1);
+// trying to output: 732
