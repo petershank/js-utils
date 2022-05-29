@@ -44,15 +44,6 @@ const myList = new LinkedList();
 myList.append(george);
 myList.append(johnAdams);
 myList.append(thomas);
-// myList.append(george);
-// console.log(myList);
-
-// const myNode = new Node();
-
-// myList.head.next = new Node(4);
-// console.log(myList.head.next);
-// console.log(new LinkedList(new Node("hello")));
-// console.log(myNode);
-// console.log(myList.append());
+myList.append(new Node());
+myList.append(new Node("James Monroe"));
 myList.print();
-// console.log(typeof myList);
