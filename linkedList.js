@@ -1,37 +1,51 @@
 "use strict";
 
 class Node {
-  constructor(data = null) {
+  constructor(data = undefined) {
     this.data = data;
-    this.next = null;
+    this.next = undefined;
   }
 }
 
 class LinkedList {
-  constructor(node = null) {
-    if (node !== null && !(node instanceof Node)) {
+  constructor(node = undefined) {
+    if (node !== undefined && !(node instanceof Node)) {
       throw new Error(
-        `LinkedList expected null or a Node but got the ${typeof node} ${node}`
+        `LinkedList expected undefined or a Node but got the ${typeof node} ${node}`
       );
     }
     this.head = node;
+    this.tail = node;
   }
 
   push(node) {
-    if (this.head === null) {
+    if (this.head === undefined) {
       this.head = node;
+      this.tail = node;
     } else {
-      let currentNode = this.head;
-      while (currentNode.next !== null) {
-        currentNode = currentNode.next;
-      }
-      currentNode.next = node;
+      let previousNode = this.tail;
+      previousNode.next = node;
+      this.tail = node;
     }
   }
 
+  //   pop(node) {
+  //     if (this.head === undefined) {
+  //       return undefined;
+  //     } else {
+  //       let currentNode = this.head;
+  //       while (currentNode.next !== undefined) {
+  //         let previous = currentNode;
+  //         currentNode = currentNode.next;
+  //       }
+  //       previous.next = undefined;
+  //       currentNode.next = node;
+  //     }
+  //   }
+
   print() {
     let current = this.head;
-    while (current !== null) {
+    while (current !== undefined) {
       console.log(current.data);
       current = current.next;
     }
@@ -47,3 +61,6 @@ myList.push(thomas);
 myList.push(new Node());
 myList.push(new Node("James Monroe"));
 myList.print();
+console.log(``);
+console.log(`first node is ${myList.head.data}`);
+console.log(`final node is ${myList.tail.data}`);
