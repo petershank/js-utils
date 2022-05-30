@@ -17,7 +17,7 @@ class LinkedList {
     this.head = node;
   }
 
-  append(node) {
+  push(node) {
     if (this.head === null) {
       this.head = node;
     } else {
@@ -41,9 +41,9 @@ const george = new Node("George Washington");
 const johnAdams = new Node("John Adams");
 const thomas = new Node("Thomas Jefferson");
 const myList = new LinkedList();
-myList.append(george);
-myList.append(johnAdams);
-myList.append(thomas);
-myList.append(new Node());
-myList.append(new Node("James Monroe"));
+myList.push(george);
+myList.push(johnAdams);
+myList.push(thomas);
+myList.push(new Node());
+myList.push(new Node("James Monroe"));
 myList.print();
